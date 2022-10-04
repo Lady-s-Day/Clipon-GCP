@@ -15,11 +15,8 @@
 runtime: nodejs14
 # [END app_yaml]
 
-# beta_settings:
-#   cloud_sql_instances: cliponproject:asia-northeast1:clipon-test2
-
 env_variables:
   CLOUD_SQL_USERNAME: postgres
   CLOUD_SQL_PASSWORD: cct1clipon
-  CLOUD_SQL_DATABASE_NAME: clipon
-  CLOUD_SQL_CONNECTION_NAME: cliponproject:asia-northeast1:clipon-test2
+  CLOUD_SQL_DATABASE_NAME: clipon_db
+  CLOUD_SQL_CONNECTION_NAME: cloud-vision-363307:asia-northeast1:clipon-psql

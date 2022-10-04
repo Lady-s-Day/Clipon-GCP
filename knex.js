@@ -16,10 +16,10 @@ const db = knex({
   connection: {
     user: process.env.DB_USER || "postgres", // e.g. 'my-user'
     password: process.env.DB_PASS || "cct1clipon", // e.g. 'my-user-password'
-    database: process.env.DB_NAME || "clipon", // e.g. 'my-database'
+    database: process.env.DB_NAME || "clipon_db", // e.g. 'my-database'
     host:
       process.env.INSTANCE_UNIX_SOCKET ||
-      "/cloudsql/cliponproject:asia-northeast1:clipon-test2", // e.g. '/cloudsql/project:region:instance'
+      "/cloudsql/cloud-vision-363307:asia-northeast1:clipon-psql", // e.g. '/cloudsql/project:region:instance'
   },
 });
 
